@@ -380,6 +380,7 @@ header {
 
 .portfol-item > img {
     margin-bottom: 20px;
+    display: block;
 }
 
 /*  -------------FOOTER------------- */
