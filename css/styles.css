@@ -69,6 +69,10 @@ body {
     color: var(--primary-text-colour);
 }
 
+.section {
+    padding: 94px 0;
+}
+
 /*  -------------HEADER-------------  */
 header {
     border-bottom: 1px solid #ECECEC;
@@ -102,7 +106,7 @@ header {
     letter-spacing: 0.02em;  
 
     display: inline-block;
-    padding: 20px 0;
+    padding: 32px 0;
 }
 
 .contact-link-list {
@@ -138,7 +142,7 @@ header {
 }
 
 .hero-container {
-    padding: 200px 237px;
+    padding: 200px;
 }
 
 .hero-title {
@@ -178,16 +182,13 @@ header {
 }
 
 /*  -------------BENEFITS-------------  */
-.benefits {
-    margin: 94px 0;
-}
 
 .benefits-list {
     display: flex;
 }
 
 .benefits-list > .list-item {
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
     margin-right: 30px;
 }
 
@@ -219,15 +220,15 @@ header {
     line-height: 1.71;
 }
 
-/*  -------------CERVICES------------- */
+/*  -------------SERVICES------------- */
 .services {
-    padding-bottom: 94px;
-}
+    padding-top: 0;
+} 
 .service-list {
     display: flex;
 }
 .service-list > .list-item {
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
     margin-right: 30px;
 }
 .service-list > .list-item:nth-child(3n) {
@@ -269,7 +270,7 @@ header {
     display: flex;
 }
 .team-list {
-    width: calc((100% - 90px) / 4);
+    flex-basis: calc((100% - 90px) / 4);
     margin-right: 30px;
 
     background-color: var(--primary_white_colour);
@@ -302,15 +303,13 @@ header {
 }
 
 /*  -------------PORTFOLIO------------- */
-.portfolio {
-    padding: 94px 0;
-}
 
 .btnfilters-list {
     display: flex;
     justify-content: center;
-    margin-bottom: 34px;
+    margin-bottom: 50px;
 }
+ 
 .btnfilters-list > .list-item:not(:last-child) {
     margin-right: 8px;
 }
@@ -326,6 +325,8 @@ header {
     letter-spacing: 0.03em;
 
     cursor: pointer;
+
+    padding: 6px 25px;
 
     display: inline-block;
     border: var(--btnfilter-background);
@@ -345,7 +346,7 @@ header {
     flex-wrap: wrap;
 }
 .portfolio-items > .list-item {
-    width: calc((100% - 60px) / 3);
+    flex-basis: calc((100% - 60px) / 3);
     margin-right: 30px;
 }
 
